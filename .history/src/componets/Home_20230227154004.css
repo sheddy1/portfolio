@@ -1,0 +1,1885 @@
+body{
+    background-color: #0B7B45;
+}
+
+.down1{
+    position: absolute;
+    left: 301px;
+    top: 3004px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: #6ADA7C;
+    z-index: 1;
+
+}
+
+.logo_name{
+    /* Rectangle 2 */
+position: absolute;
+width: 50px;
+height: 50px;
+left: 15px;
+top: 10px;
+background: #801616;
+border-radius: 50px;
+display: grid;
+place-items: center;
+text-align: center;
+}
+
+.logo_names{
+margin-top: -10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+color: #FFFFFF;
+}
+
+.name{
+    /* Shadrach Godwin */
+
+position: absolute;
+width: 312px;
+height: 44px;
+left: 80px;
+top: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #430909;
+
+
+}
+
+.resume{
+background: #C4FFEA;
+
+
+/* Resume */
+
+position: absolute;
+width: 127px;
+height: 40px;
+right: 10px;
+top: 15px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+
+font-family: 'Inter';
+font-weight: bold;
+font-size: 32px;
+/* identical to box height */
+
+color: #3C3007;
+
+
+}
+
+.header ul{
+    position: absolute;
+    left: 400px;
+    top: 7px;
+}
+
+.header ul li{
+    display: inline-block;
+    margin: 0 15px;
+    line-height: 30px;
+}
+
+.header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #240b0b;
+}
+
+.header ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s linear;
+}
+
+.header ul li a:hover:before{
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.menu, .cancel{
+    width: 30px;
+    height: 30px;
+    
+}
+
+@media(max-width: 1270px){
+    .header ul li a{
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 1200px){
+    .name{
+        font-size: 30px;
+    }
+
+    .header ul{
+        left: 300px;
+    }
+}
+
+@media(max-width: 1100px){
+    .name{
+        font-size: 25px;
+        left: 60px;
+    }
+
+    .header ul{
+        left: 270px;
+    }
+
+    .header ul li a{
+        font-size: 18px;
+    }
+
+    .logo_name{
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        left: 5px;
+    }
+
+    .logo_names{
+        font-size: 35px;
+    }
+    
+}
+
+@media(max-width: 1000px){
+    .header ul{
+        left: 230px;
+    }
+
+    .resume{
+        width: 100px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 1000px){
+    .menu, .cancel{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    .cancel{
+        display: none;
+    }
+
+    .resume{
+        right: 50px;
+    }
+}
+
+
+
+.about_me{
+    text-decoration: none;
+    /* About me */
+
+/* position: absolute;
+width: 124px;
+height: 31px;
+left: 495px;
+top: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+display: flex;
+align-items: center;
+
+color: #071B04; */
+
+
+}
+
+.experience{
+    text-decoration: none;
+    /* About me */
+
+/* Experiences */
+
+/* position: absolute;
+width: 158px;
+height: 31px;
+left: 645px;
+top: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+display: flex;
+align-items: center;
+
+color: #071B04; */
+
+
+
+
+}
+
+.projects{
+    /* Projects */
+
+/* position: absolute;
+width: 106px;
+height: 31px;
+left: 810px;
+top: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+display: flex;
+align-items: center;
+
+color: #071B04;
+
+text-decoration: none; */
+}
+
+.contact{
+    /* position: absolute;
+width: 106px;
+height: 31px;
+left: 940px;
+top: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+display: flex;
+align-items: center;
+
+color: #071B04;
+
+text-decoration: none; */
+}
+
+.testimonies{
+    /* position: absolute;
+width: 106px;
+height: 31px;
+left: 1070px;
+top: 22px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+display: flex;
+align-items: center;
+
+color: #071B04;
+
+text-decoration: none; */
+}
+
+.leftbar{
+    /* Rectangle 6 */
+
+position: fixed;
+width: 5px;
+height: 190px;
+left: 72.04px;
+bottom: 0px;
+
+background: #FFFFFF;
+
+}
+
+.figma_photo{
+    /* figma 1 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: -10px;
+bottom: 200px;
+}
+
+.linkdn_photo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    bottom: 250px;
+}
+
+.facebook_photo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    bottom: 300px;
+}
+
+.instagram_photo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    bottom: 350px;
+}
+
+.github_photo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    bottom: 400px;
+}
+
+.rightbar{
+    /* Rectangle 7 */
+
+position: fixed;
+width: 5px;
+height: 190px;
+left: 1440px;
+bottom: 0px;
+
+background: #FFFFFF;
+
+}
+
+.about_comp{
+    width: 1160px;
+    height: 580px;
+    /* background-color: aqua; */
+    position:absolute;
+    left: 180px;
+    top: 800px;
+}
+
+.mail_left{
+    text-decoration: none;
+    position: fixed;
+    bottom: 300px;
+    right: -43px;
+    
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+}
+
+.intro_div{
+    width: 1160px;
+    height: 580px;
+    /* background-color: aqua; */
+    position:absolute;
+    left: 180px;
+    top: 100px;
+}
+
+.hi_there{
+    /* Hi there, my name is : */
+
+position: absolute;
+left: 0px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.shadrach{
+    /* Shadrach */
+
+position: absolute;
+width: 300px;
+height: 77px;
+left: 60px;
+top: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 77px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.s_g{
+    /* Vector 1 */
+
+position: absolute;
+width: 50.98px;
+height: 50px;
+left: 58px;
+top: 90px;
+
+
+}
+
+.godwin{
+    /* Shadrach */
+
+position: absolute;
+width: 300px;
+height: 77px;
+left: 60px;
+top: 115px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 77px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.three_ext{
+    /* Rectangle 8 */
+
+position: absolute;
+width: 511px;
+height: 5px;
+left: 106px;
+top: 118px;
+
+background: #FFFFFF;
+
+}
+
+.hexagon1{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.full_stack{
+    /* FULL STACK WEB DEVELOPER */
+
+position: absolute;
+width: 375px;
+height: 126px;
+left: 70px;
+top: 10px;
+
+font-family: 'Algerian';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 63px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+}
+
+.full_stack1{
+    /* FULL STACK WEB DEVELOPER */
+
+position: absolute;
+width: 375px;
+height: 126px;
+left: 100px;
+top: 10px;
+
+font-family: 'Algerian';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 63px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+}
+
+.hexagon_div1{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    right: 95px;
+    top: 45px;
+}
+
+.hexagon_div2{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    right: 95px;
+    top: 235px;
+}
+
+.hexagon_div3{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    right: 95px;
+    top: 430px;
+}
+
+.hex1_con{
+    /* Rectangle 15 */
+
+position: absolute;
+width: 20px;
+height: 64px;
+left: 830px;
+top: 190px;
+
+background: #A8860C;
+
+}
+
+.hex2_con{
+    /* Rectangle 15 */
+
+position: absolute;
+width: 20px;
+height: 64px;
+left: 830px;
+top: 380px;
+
+background: #A8860C;
+
+}
+
+.hire_me{
+    /* Rectangle 17 */
+
+position: absolute;
+width: 220px;
+height: 70px;
+left: 70px;
+top: 510px;
+box-shadow: 0px 10px 10px 0px;
+
+background: #98EA66;
+
+/* Hire Me */
+font-family: 'Algerian';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 53px;
+/* identical to box height */
+
+align-items: center;
+text-align: center;
+
+color: #510B0B;
+
+
+
+}
+
+.intro_label{
+  
+
+position: absolute;
+width: 540px;
+height: 310px;
+left: 60px;
+top: 190px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+.sheddy_pic{
+    /* The Magas 10 1 */
+
+position: absolute;
+width: 489px;
+height: 580px;
+left: 0px;
+top: 0px;
+
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 200px;
+
+}
+
+
+
+.about1{
+    /* About Me */
+
+position: absolute;
+width: 201px;
+height: 39px;
+left: 520px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+
+.about2{
+    /* Hey there, my name is Shadrach Godwin, i have always loved to code, plus i always put in the effort to get better in whatever i set my hands to do, and to do this i constantly engage in tqaking lessons and developing various projects that will help me to become a better developer I have had over 5 years experience as a developer and i am confident that i could handle any project successfully by the grace of God. I am a good team player and i always seek to do what is best for whatever team i am in, i always aim to constantly improve myself in all that i do. I have been privilleged to work with some orgarnisations who have good recomedations concerning me. Rest assured i will always deliver a good job. */
+
+position: absolute;
+width: 620px;
+height: 408px;
+left: 520px;
+top: 30px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.about3{
+    /* Here are some tools that i work with on a daily basis */
+
+position: absolute;
+text-decoration: underline;
+width: 636px;
+height: 30px;
+left: 570px;
+top: 420px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.skill_react{
+    width: 140px;
+    height: 30px;
+    /* background-color: #0B7B45; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.skill_php{
+    width: 140px;
+    height: 30px;
+    /* background-color: #0B7B45; */
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.skill_Javascript{
+    width: 145px;
+    height: 30px;
+    /* background-color: #0B7B45; */
+    position: absolute;
+    top: 0px;
+    left: 280px;
+}
+
+.skill_react_native{
+    width: 170px;
+    height: 30px;
+    /* background-color: #0B7B45; */
+    position: absolute;
+    top: 0px;
+    left: 450px;
+}
+
+.skill_line1{
+    position: absolute;
+    top: 460px;
+    left: 520px;
+    width:700 ;
+}
+
+.skill_line2{
+    position: absolute;
+    top: 510px;
+    left: 520px;
+    width:700 ;
+}
+
+.skill_react_right_img{
+    height: 100%;
+}
+
+.skill_react_label{
+    /* React.js */
+
+position: absolute;
+width: 99px;
+height: 30px;
+left: 35px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.skill_react_label2{
+    /* React.js */
+
+position: absolute;
+width: 99px;
+height: 30px;
+left: 95px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.skill_line3{
+    position: absolute;
+    top: 560px;
+    left:520px;
+    width:700 ;
+}
+
+.experience_comp{
+    width: 1160px;
+    height: 580px;
+    /* background-color: aqua; */
+    position:absolute;
+    left: 180px;
+    top: 1500px;
+}
+
+.exp_intro{
+    /* 02. My Experiences */
+
+position: absolute;
+width: 283px;
+height: 38px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.exp_heading{
+    width: 100%;
+    height: 40px;
+    /* background-color: #3C3007; */
+    position: absolute;
+    top: 40px;
+    left: 0px;
+
+}
+
+.exp_heading_table{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    /* background-color: red; */
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.exp_job_title{
+    /* NASSCO */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+align-items: center;
+color: #FFFFFF;
+
+}
+
+.exp_job_title_idn{
+    /* Rectangle 22 */
+
+position: absolute;
+width: 400px;
+height: 10px;
+left: 0px;
+bottom: -5px;
+
+background: #1AC217;
+
+}
+
+.exp_job_title_idn1{
+    /* Rectangle 22 */
+
+position: absolute;
+width: 100%;
+height: 10px;
+left: 0px;
+bottom: -5px;
+
+background: #BBFF92;
+
+}
+
+.job_desc{
+    /* The National Social safety net coordinating office Abuja, is a Project which was setup by the office of the vice president to help the poor and vulnurable in Nigeria. ( April 2021 - Present) */
+
+position: absolute;
+width: 100%;
+height: 98px;
+left: 0px;
+top: 100px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 30px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.exp_duties{
+    height: 30px;
+    width: 1000px;
+    /* background-color: red; */
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+.exp_duties1{
+    height: 30px;
+    width: 1000px;
+    /* background-color: red; */
+    position: absolute;
+    top: 275px;
+    left: 0px;
+}
+
+.exp_duties2{
+    height: 30px;
+    width: 1000px;
+    /* background-color: red; */
+    position: absolute;
+    top: 330px;
+    left: 0px;
+}
+
+.exp_duties3{
+    height: 30px;
+    width: 1000px;
+    /* background-color: red; */
+    position: absolute;
+    top: 385px;
+    left: 0px;
+}
+
+.exp_duties4{
+    height: 30px;
+    width: 1000px;
+    /* background-color: red; */
+    position: absolute;
+    top: 440px;
+    left: 0px;
+}
+
+.exp_duties_pic{
+    height: 30px;
+    width: 30px;
+
+}
+
+.exp_duties_writeup{
+    /* Cleaning and managing of data */
+
+position: absolute;
+width: 100%;
+
+left: 40px;
+top: -3px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 35px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.projects_comp{
+    width: 1160px;
+    height: 580px;
+    /* background-color: aqua; */
+    position:absolute;
+    left: 180px;
+    top: 2200px;
+}
+
+.projects_intro{
+    /* 02. My Experiences */
+
+position: absolute;
+width: 500px;
+height: 38px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.projects_comp1{
+    width: 1160px;
+    height: 520px;
+    /* background-color: rgb(9, 29, 29); */
+    position:absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.projects_desktop{
+    height: 100%;
+    width: 450px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.projects_name{
+    /* Github Finder */
+
+position: absolute;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 47px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+.projects_desc{
+    position: absolute;
+    width: 676px;
+    height: 238px;
+    left: 50px;
+    top: 70px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+
+}
+
+.project_recources{
+    /* Rectangle 26 */
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 50px;
+    top: 350px;
+    place-items: center;
+    display: grid;
+    background: #98EA66;
+
+    /* React.js */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B033A;
+}
+
+.project_recources1{
+    /* Rectangle 26 */
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 200px;
+    top: 350px;
+    place-items: center;
+    display: grid;
+    background: #98EA66;
+
+    /* React.js */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B033A;
+}
+
+.project_recources2{
+    /* Rectangle 26 */
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 350px;
+    top: 350px;
+    place-items: center;
+    display: grid;
+    background: #98EA66;
+
+    /* React.js */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B033A;
+}
+
+.project_recources3{
+    /* Rectangle 26 */
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 500px;
+    top: 350px;
+    place-items: center;
+    display: grid;
+    background: #98EA66;
+
+    /* React.js */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B033A;
+}
+
+.pro_resources{
+    position: absolute;
+    width: 570px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+}
+
+.pro_links{
+    position: absolute;
+    width: 570px;
+    height: 30px;
+    left: 0px;
+    top: 70px;
+}
+
+.project_link{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 50px;
+    top: 350px;
+    place-items: center;
+    display: grid;
+    background: #98EA66;
+
+    /* React.js */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B033A;
+}
+
+.project_link1{
+        position: absolute;
+        width: 200px;
+        height: 30px;
+        left: 280px;
+        top: 350px;
+        place-items: center;
+        display: grid;
+        background: #98EA66;
+    
+        /* React.js */
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #1B033A;
+}
+
+.project_link2{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 510px;
+    top: 350px;
+    place-items: center;
+    display: grid;
+    background: #98EA66;
+
+    /* React.js */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B033A;
+}
+
+.projects_desktop_image{
+    width: 395px;
+    height: 250px;
+    position: absolute;
+    right: 26px;
+    top: 43px;
+}
+
+.contact_comp{
+    width: 1160px;
+    height: 580px;
+    /* background-color: aqua; */
+    position:absolute;
+    left: 180px;
+    top: 2900px;
+}
+
+.contact_comp1{
+    /* Rectangle 32 */
+
+position: absolute;
+width: 800px;
+height: 100%;
+right: 0px;
+top: 0px;
+
+background: #04311C;
+
+}
+
+.contact_comp2{
+    /* Rectangle 33 */
+
+position: absolute;
+width: 420px;
+height: 500px;
+left: 100px;
+top: 50px;
+
+background: #FFF4CD;
+
+}
+
+.contact_comp1_intro{
+    /* Get in Touch */
+
+position: absolute;
+width: 289px;
+height: 48px;
+left: 320px;
+top: 20px;
+
+font-family: 'Grandstander';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 48px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFF4CD;
+
+
+}
+
+.contact_comp1_desc{
+/* Feel free to contact me whenever you can */
+
+position: absolute;
+left: 210px;
+top: 70px;
+
+font-family: 'Grenze';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 53px;
+display: flex;
+align-items: center;
+
+color: #FFF4CD;
+
+
+}
+
+.contact_comp1_desc_img{
+    /* smile 1 */
+width: 25px;
+height: 25px;
+position: absolute;
+right: 90px;
+top: 87px;
+
+}
+
+.contact_name_div{
+    position: absolute;
+    width: 540px;
+    height: 40px;
+    left: 190px;
+    top: 130px;
+    background: #FFFFFF;
+}
+
+.contact_email_div{
+    position: absolute;
+    width: 540px;
+    height: 40px;
+    left: 190px;
+    top: 220px;
+    background: #FFFFFF;
+}
+
+.contact_message_div{
+    position: absolute;
+    width: 540px;
+    height: 150px;
+    left: 190px;
+    top: 320px;
+    background: #FFFFFF;
+}
+
+
+.contact_name_txt{
+    /* Rectangle 34 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+
+    /* Name... */
+    font-family: 'Grenze';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+
+    color: #1a1505;
+
+
+}
+
+.contact_name_txtarea{
+    /* Rectangle 34 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+
+    /* Name... */
+    font-family: 'Grenze';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    align-items: center;
+
+    color: #1a1505;
+
+
+}
+
+.contact_button{
+    /* Rectangle 37 */
+
+position: absolute;
+width: 256px;
+height: 52px;
+left: 340px;
+bottom: 10px;
+
+background: #1FF54E;
+border-radius: 30px;
+
+    /* Send Message */
+
+
+font-family: 'Grenze';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+display: grid;
+align-items: center;
+
+color: #031B28;
+
+
+}
+
+.contact1_intro{
+    /* Contact Me */
+
+position: absolute;
+width: 220px;
+height: 40px;
+left: 120px;
+top: 10px;
+
+font-family: 'Grandstander';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 40px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #04311C;
+
+
+}
+
+.contact1_location{
+    /* background-color: #fafdff; */
+    width: 325px;
+    height: 60px;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+
+.contact1_location_icon{
+    /* placeholder 1 */
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 0px;
+top: 0px;
+
+}
+
+.contact1_location_txt{
+    /* No 1, Mohammed Abbass Abare Street, new kado Abuja, Nigeria. */
+
+position: absolute;
+left: 50px;
+top: 0px;
+
+font-family: 'Grenze';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+display: flex;
+align-items: center;
+
+color: #4E0000;
+
+
+}
+
+.contact1_location_txt1{
+    /* No 1, Mohammed Abbass Abare Street, new kado Abuja, Nigeria. */
+
+position: absolute;
+left: 50px;
+top: 10px;
+
+font-family: 'Grenze';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+display: flex;
+align-items: center;
+
+color: #4E0000;
+
+
+}
+
+.contact1_email{
+    /* background-color: #fafdff; */
+    width: 325px;
+    height: 60px;
+    position: absolute;
+    left: 50px;
+    top: 170px;
+}
+
+.contact1_phone{
+    /* background-color: #fafdff; */
+    width: 325px;
+    height: 60px;
+    position: absolute;
+    left: 50px;
+    top: 260px;
+}
+
+.contact_social_github{
+    /* github-sign 1 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.contact_social_linkdn{
+    /* github-sign 1 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 60px;
+    bottom: 0px;
+}
+
+.contact_social_whatsapp{
+    /* github-sign 1 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 120px;
+    bottom: 0px;
+}
+
+.contact_social_instagram{
+    /* github-sign 1 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 180px;
+    bottom: 0px;
+}
+
+.contact_social_facebook{
+    /* github-sign 1 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 240px;
+    bottom: 0px;
+}
+
+.contact_social{
+    position: absolute;
+width: 300px;
+height: 40px;
+left: 70px;
+bottom: 40px;
+}
+
+.testimony_comp{
+    width: 1160px;
+    height: 580px;
+    /* background-color: aqua; */
+    position:absolute;
+    left: 180px;
+    top: 3700px;
+}
+
+.testimony_comp_header{
+        /* TESTIMONIES ABOUT ME */
+
+    position: absolute;
+    left: 200px;
+    top: 0px;
+
+    font-family: 'Graduate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 73px;
+    /* identical to box height */
+    display: grid;
+    align-items: center;
+
+    color: #A8FF7E;
+
+
+}
+
+.testimony_body{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: #0A2131;
+    border-radius: 50px;
+}
+
+.testimony_body_pic1{
+    width: 250px;
+    height: 350px;
+    /* background-color: #1FF54E; */
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.testimony_body_writeup{
+    width: 800px;
+    height: 350px;
+    /* background-color: #1FF54E; */
+    position: absolute;
+    top: 60px;
+    right: 40px;
+}
+
+.testimony_body_writeup1{
+    width: 800px;
+    height: 40px;
+    /* background-color: #152719; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.testimony_body_writeup2{
+    width: 800px;
+    height: 40px;
+    /* background-color: #152719; */
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.testimony_body_writeup2_split{
+    width: 7px;
+    height: 100%;
+    background-color: #59E881;
+    position: absolute;
+    top: 0px;
+    right: 400px;
+}
+
+.testimony_body_writeup3{
+    width: 800px;
+    height: 30px;
+    /* background-color: #152719; */
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+
+.testimony_body_writeup4{
+    width: 800px;
+    height: 160px;
+    /* background-color: #152719; */
+    position: absolute;
+    top: 140px;
+    right: 0px;
+}
+
+.testimony_body_writeup5{
+    width: 800px;
+    height: 40px;
+    /* background-color: #152719; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.testimony_body_writeup1_pic{
+    width: 100%;
+    height: 100%;
+}
+
+.testimony_body_writeup1_rqmark{
+    height: 100%;
+    width: 40px;
+    /* right-quotation-mark 1 */
+    transform: rotate(-180deg);
+
+}
+
+.testimony_body_writeup2_facebook{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 520px;
+    top: 0px;
+}
+
+.testimony_body_writeup2_insta{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 470px;
+    top: 0px;
+}
+
+.testimony_body_writeup2_linkdn{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 420px;
+    top: 0px;
+}
+
+.testimony_body_writeup2_name{
+    /* Anthony Godwin David */
+
+position: absolute;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 47px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+}
+
+
+.testimony_body_writeup4_lab{
+    /* I had a job to do, back in 2015, of which i assigned it to Shadrach, and he did the job like a professional would and made sure that all my needs were met he is someone that pays attention to details to make sure that his client gets the best. */
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+
+font-family: 'Reem Kufi';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 42px;
+display: flex;
+align-items: center;
+text-align: justify;
+color: #FFFFFF;
+
+
+}
+
+.testimony_body_writeup3_intro{
+    /* Amazing Customer Service */
+
+position: absolute;
+left: 0px;
+top: 0px;
+
+font-family: 'Risque';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+text-decoration-line: underline;
+
+color: #FFFFFF;
+
+
+}
+
+.testimony_body_writeup_right{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+
+.testimony_body_writeup_left{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+
+.testimony_body_writeup_pic{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* right-quotation-mark 1 */
+    transform: rotate(0deg);
+
+}
+
+.shed1{
+    position: absolute;
+    top: 8000px;
+}
+
